@@ -1,0 +1,145 @@
+/* BODY */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url('greenturn.png');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+}
+
+/* HEADING */
+h1{
+    color: white;
+    font-size: 40px;
+    margin: 40px 0px;
+    text-align: center;
+    font-family: 'Michroma', sans-serif;
+}
+
+/* GAME CONTAINER */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+/* GAME */
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box{
+    height: 17vmin;
+    width: 17vmin;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-size: 10vmin;
+    color: green;
+    background-color: black;
+}
+
+/* SCORES */
+.side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    /* flex-direction: column; */
+    /* margin-right: 280px; */
+}
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.score{
+    background-color: black;
+    color: white;
+    font-size: 37px;
+    border: 2px solid white;
+    padding: 5px 36px;
+}
+#x-score {
+    color: red;
+}
+#o-score {
+    color: green;
+}
+
+/* RESET */
+#reset{
+    margin: 30px;
+    padding: 17px 33px;
+    font-size: 2.5vmin;
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Michroma', sans-serif;
+}
+#resetScores{
+    padding: 17px 18px;
+    font-size: 2.5vmin;
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Michroma', sans-serif;
+}
+
+@media only screen and (max-width: 650px){
+    .side{
+        gap: 2.5vmin;
+    } 
+    .score{
+        font-size: 25px;
+        padding: 5px 30px;
+    }
+    #reset{
+        margin: 15px 0;
+        padding: 10px 28px;
+        font-size: 15px;
+    }
+    #resetScores{
+        padding: 10px 16px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    h1{
+        font-size: 25px;
+        margin: 25px 0;
+    }
+    .side{
+        flex-direction: column;
+        margin-top: 25px;
+        margin-right: 0px;
+        gap: 0vmin;
+    }
+    .score{
+        font-size: 25px;
+        padding: 5px 28px;
+    }
+    #reset{
+        margin: 15px 0;
+        padding: 10px 28px;
+        font-size: 13px;
+    }
+    #resetScores{
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+}

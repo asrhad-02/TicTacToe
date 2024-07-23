@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <style>
+        .preload-image {
+            display: none;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@200&family=Lora&family=Michroma&family=Protest+Revolution&family=Protest+Riot&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <h1>TIC TAC TOE</h1>
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+            <div class="side">
+                <div class="score-board">
+                    <div class="score">
+                        <p id="o-score">0</p>
+                    </div>
+                    <div class="score">
+                        <p id="x-score">0</p>
+                    </div>
+                </div>
+                <button id="reset">New Game</button>
+                <button id="resetScores">Reset Scores</button>
+            </div>
+        </div>    
+    </main>
+    <audio id="gameSound" src="game.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+
+</html>
